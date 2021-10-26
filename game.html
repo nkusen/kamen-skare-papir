@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Igra</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Kamen, Škare, Papir</h1>
+    </header>
+
+    <div class="scoreboard">
+        <div id="korisnik-label" class="badge">korisnik</div>
+        <div id="racunalo-label" class="badge">racunalo</div>
+        <span id="korisnik-score">0</span>:<span id="racunalo-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Dobrodošli</p>
+    </div>
+
+    <div class="choices">
+        <div id="k" class="choice">
+            <img height="128px" width="128px" src="kamen.png" alt="kamen">
+        </div>
+        <div id="s" class="choice">
+            <img height="128px" width="128px" src="skare.png" alt="skare">
+        </div>
+        <div id="p" class="choice">
+            <img height="128px" width="128px" src="papir.png" alt="papir">
+        </div>
+    </div>
+
+    <p id="action-message">Odaberite potez.</p>
+
+    <script src="app.js"></script>
+    <script>
+        var naslov = document.getElementsByTagName("header")[0];
+        naslov.onclick = function() {
+            location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
